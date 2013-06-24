@@ -1,9 +1,16 @@
- /*FileReader.c*/
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Filename:	FileReader.c
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #define FILE_NAME "array_info.txt"
 
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Function:	file_info
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 void file_info(char* file_name, int* array_len, int* buff_len){
 	FILE* contents;
 	char curr;
@@ -28,6 +35,10 @@ void file_info(char* file_name, int* array_len, int* buff_len){
 	fclose(contents);
 }
 
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Function:	file_info_char
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 void file_info_char(char* file_name, int* array_len, int* buff_len){
 	FILE* contents;
 	char curr;
@@ -52,6 +63,10 @@ void file_info_char(char* file_name, int* array_len, int* buff_len){
 	fclose(contents);
 }
 
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Function:	file_to_array
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 int* file_to_array(char* file_name, int* array_len){
 	FILE* contents;
 	int* array, buff_len, converting;
@@ -84,6 +99,10 @@ int* file_to_array(char* file_name, int* array_len){
 	return array;
 }
 
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Function:	file_to_array_char
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 char** file_to_array_char(char* file_name, int* array_len){
 	FILE* contents;
 	int buff_len;

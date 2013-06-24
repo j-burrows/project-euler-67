@@ -1,15 +1,13 @@
-/* ProblemEighteen.c */
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Filename:	ProblemEighteen.c
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 #include "ProblemEighteen.h"
 
-/*	Function:	triangle_rows
- *
- *	@param:		array_len, the length of the array that is in the form of a triangle.
- *	@return:	current_row, the rows in the triangle.
- *
- *  triangle rows will find the height of the array as if it were shaped like a pyramid. Starting at zero,
- *	every entry incriments the value of the column. Once it passes the row width, the column is set to zero,
- *	and the rows are incrimented by one. This results in row holding the height of the array.
- */
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Function:	triangle_rows
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 int triangle_rows(int array_len){
 	int current_row, current_col;
 	int i;
@@ -26,18 +24,10 @@ int triangle_rows(int array_len){
 	return current_row;
 }
 
-/*	Function:	find_max_sum
- *
- *	@param:		triangle, an array of elements that is shaped like a triangle.
- *				array_len, the length of the array of elements.
- *				row, the height of the triangle shaped array.
- *	@return:	triangle[0], the top node in the array.
- *
- *	find_max_sum finds the highest product of any adjacent numbers going up in a triangular array. Starting from The
- *	end of the second to last row, the two elements beneath it are compared, and the larger value is added to the presently
- *	held value. This continues until the second to last row is checked and summed into the first row. The first element of
- *	the array is then returned.
- */
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Function:	find_max_sum
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 int find_max_sum(int* triangle, int array_len, int row){
 	int position, end_of_row_pointer;
 	

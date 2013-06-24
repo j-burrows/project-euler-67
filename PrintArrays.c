@@ -1,6 +1,13 @@
-/*PrintArrays.c*/
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Filename:	PrintArrays.c
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 #include "PrintArrays.h"
 
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Function:	printarray
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 void printarray(int* array, int array_len){
 	int i;
 	fprintf(stdout, "\n");
@@ -10,6 +17,10 @@ void printarray(int* array, int array_len){
 	fprintf(stdout, "\n");
 }
 
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Function:	printarray_two
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 void printarray_two(int** array, int row_len, int col_len){
 	int row, col;
 	for(col=0;col<col_len;col++){
@@ -21,6 +32,10 @@ void printarray_two(int** array, int row_len, int col_len){
 	fprintf(stdout, "\n");
 }
 
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Function:	printarray_char
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 void printarray_char(char* array, int array_len){
 	int i;
 	fprintf(stdout, "\n");
@@ -30,6 +45,10 @@ void printarray_char(char* array, int array_len){
 	fprintf(stdout, "\n");
 }
 
+/*-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+ |	Function:	printarray_char_two
+ +-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 void printarray_char_two(char** array, int row_len, int col_len){
 	int row, col;
 	
